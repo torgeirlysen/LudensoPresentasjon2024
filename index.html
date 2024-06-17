@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unicorn Description</title>
     <style>
         .center {
             display: flex;
+            flex-wrap: wrap; /* Allows items to wrap onto the next line */
             justify-content: center;
-            width: 100%;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
         }
         .model {
-            flex: 1; /* Ensures that each model takes equal space */
-            max-width: 600px;
-            height: 800px;
-            background: none transparent;
+            flex: 1 1 100%; /* Adjusts the basis to 100% on smaller screens */
+            max-width: 600px; /* Maximum width of each iframe */
+            height: 800px; /* Fixed height */
             border: none;
-            overflow: hidden;
             margin: 10px;
         }
         h1 {
@@ -23,31 +26,26 @@
         }
         p {
             text-align: center;
+            margin: 0 20px; /* Adds horizontal margin for better text alignment on small screens */
         }
     </style>
 </head>
 <body>
-<div class="center">
-    <h1>What is a Unicorn?</h1>
-    <p>A unicorn is a mythical creature depicted as a horse with a single, spiraling horn on its forehead. Known for their pure white coat, unicorns symbolize purity and grace. They are believed to have magical powers, such as the ability to heal and neutralize poison. Legends often state that only those who are pure of heart can interact with these majestic beings.</p>
-    <iframe src="https://ludensoexplore.com/ModelViewer/?experienceUid=9a11e823-a5ec-4852-b5d0-08dc8eaf0d6a&enrichmentUid=18a8fa59-7274-48cb-84b0-d9cfd3de3ca7"
-        title="unicorn"
-        class="model"
-        scrolling="no"
-        allow="*"
-        allowtransparency="true"
-        allowfullscreen>
-    </iframe>
-    <iframe src="https://ludensoexplore.com/ModelViewer/?experienceUid=649bfa73-a016-4e5e-b5d1-08dc8eaf0d6a&enrichmentUid=55d688d3-d072-422b-8cdd-b0745c84fa7e"
-        title="anatomy of horse"
-        class="model"
-        scrolling="no"
-        allow="*"
-        allowtransparency="true"
-        allowfullscreen>
-    </iframe>
-</div>
+    <div class="center">
+        <h1>What is a Unicorn?</h1>
+        <p>A unicorn is a mythical creature depicted as a horse with a single, spiraling horn on its forehead. Known for their pure white coat, unicorns symbolize purity and grace. They are believed to have magical powers, such as the ability to heal and neutralize poison. Legends often state that only those who are pure of heart can interact with these majestic beings.</p>
+        <iframe src="https://ludensoexplore.com/ModelViewer/?experienceUid=9a11e823-a5ec-4852-b5d0-08dc8eaf0d6a&enrichmentUid=18a8fa59-7274-48cb-84b0-d9cfd3de3ca7"
+            title="Unicorn 3D model viewer"
+            class="model"
+            scrolling="no"
+            allowfullscreen>
+        </iframe>
+        <iframe src="https://ludensoexplore.com/ModelViewer/?experienceUid=649bfa73-a016-4e5e-b5d1-08dc8eaf0d6a&enrichmentUid=55d688d3-d072-422b-8cdd-b0745c84fa7e"
+            title="Anatomy of a horse 3D model viewer"
+            class="model"
+            scrolling="no"
+            allowfullscreen>
+        </iframe>
+    </div>
 </body>
 </html>
-
-
