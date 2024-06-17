@@ -4,23 +4,43 @@
     <title>Unicorn Description</title>
     <style>
         .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 70%;
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
-        <h1 style="color:blue;">A Blue Heading</h1>
-
+        .model {
+            flex: 1; /* Ensures that each model takes equal space */
+            max-width: 600px;
+            height: 800px;
+            background: none transparent;
+            border: none;
+            overflow: hidden;
+            margin: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        p {
+            text-align: center;
+        }
     </style>
 </head>
-<body >
+<body>
 <div class="center">
-    <h1>What is a Unicorn?!</h1>
+    <h1>What is a Unicorn?</h1>
     <p>A unicorn is a mythical creature depicted as a horse with a single, spiraling horn on its forehead. Known for their pure white coat, unicorns symbolize purity and grace. They are believed to have magical powers, such as the ability to heal and neutralize poison. Legends often state that only those who are pure of heart can interact with these majestic beings.</p>
-     <iframe src="https://ludensoexplore.com/ModelViewer/?experienceUid=9a11e823-a5ec-4852-b5d0-08dc8eaf0d6a&enrichmentUid=18a8fa59-7274-48cb-84b0-d9cfd3de3ca7"
+    <iframe src="https://ludensoexplore.com/ModelViewer/?experienceUid=9a11e823-a5ec-4852-b5d0-08dc8eaf0d6a&enrichmentUid=18a8fa59-7274-48cb-84b0-d9cfd3de3ca7"
         title="unicorn"
-        style="background: none transparent; border: none; overflow: hidden; width: 600px; height: 800px"
-        class="center"
+        class="model"
+        scrolling="no"
+        allow="*"
+        allowtransparency="true"
+        allowfullscreen>
+    </iframe>
+    <iframe src="https://ludensoexplore.com/ModelViewer/?experienceUid=649bfa73-a016-4e5e-b5d1-08dc8eaf0d6a&enrichmentUid=55d688d3-d072-422b-8cdd-b0745c84fa7e"
+        title="anatomy of horse"
+        class="model"
         scrolling="no"
         allow="*"
         allowtransparency="true"
@@ -29,4 +49,5 @@
 </div>
 </body>
 </html>
+
 
